@@ -42,14 +42,18 @@
 
 # employee_file.close()
 
-with open('readme.txt','w') as f:
-  f.write('readme')
+# with open('readme.txt','w') as f:
+#   f.write('readme')
 
 #This overwrites the original content
-with open('readme.txt','w') as f:
-  f.write("I don't care")
+# with open('readme.txt','w') as f:
+#   f.write('I dont care')
 
 #This appends to the original content
-with open('readme.txt','a') as f:
-  f.write("I don't care I don't care I don't care")
+# with open('readme.txt','a') as f:
+#   f.write('I don't care I dont care I dont care')
   
+#Create a file through python code
+with open('user.txt','a') as f:
+  input = input("Write words here: ")
+  f.write(input)
